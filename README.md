@@ -157,6 +157,7 @@ Example:
 ```bash
 jupyter notebook
 ```
+The accompanying project report (`cyber_phishing_report.pdf`) summarizes the methodology, experimental results, and critical evaluation of the reproduction study.
 
 ---
 
