@@ -119,6 +119,24 @@ The notebook includes:
 
 ---
 
+## Project Report
+
+The final project report is available in this repository:
+
+- **cyber_phishing_report.pdf**
+
+The report includes:
+
+- Summary of the original repository
+- Critical evaluation
+- Feature engineering analysis
+- Reproducibility analysis
+- Experimental results
+- Conclusions
+- Executive summary
+
+---
+
 ## Requirements
 
 Install the required Python packages:
