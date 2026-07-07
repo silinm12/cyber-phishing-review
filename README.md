@@ -19,8 +19,21 @@ https://github.com/gangeshbaskerr/Phishing-Website-Detection
 The project uses the dataset:
 
 ```
-DataFiles/5.urldata.csv
+data/5.urldata.csv
 ```
+
+The CSV is expected to be available locally in the repository under the
+`data/` folder. If the file is missing after cloning or copying the project,
+reproduce the dataset setup as follows:
+
+1. Download or clone the original repository:
+   https://github.com/gangeshbaskerr/Phishing-Website-Detection
+2. Copy `DataFiles/5.urldata.csv` from that repository into this project as:
+   `data/5.urldata.csv`
+3. Run `notebook.ipynb` from the root of this repository.
+
+If `data/5.urldata.csv` is missing, the notebook raises a clear
+`FileNotFoundError` with these copy instructions.
 
 Each website record contains:
 
@@ -45,6 +58,8 @@ cyber-phishing-review/
 ├── README.md
 ├── requirements.txt
 ├── cyber_phishing_report.pdf
+├── data/
+│   └── 5.urldata.csv  # copy here before running the notebook
 ├── figures/
 └── src/
     ├── data.py
@@ -100,7 +115,13 @@ Model performance is evaluated using:
 - Precision
 - Recall
 - F1 Score
+- F2 Score
 - ROC-AUC
+- PR-AUC
+
+The notebook also includes precision-recall curves and threshold analysis to
+evaluate the trade-off between reducing false negatives and increasing false
+positives.
 
 ---
 
@@ -112,7 +133,10 @@ The notebook includes:
 
 - Performance comparison table
 - Confusion matrices
-- ROC curves
+- Precision-recall curves
+- Duplicate row robustness analysis
+- Domain-aware generalization analysis
+- Threshold and risk trade-off analysis
 - Feature importance analysis
 - Error analysis
 - Comparison with the original implementation
