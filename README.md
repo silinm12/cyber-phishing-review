@@ -22,18 +22,18 @@ The project uses the dataset:
 data/5.urldata.csv
 ```
 
-The CSV is expected to be available locally in the repository under the
-`data/` folder. If the file is missing after cloning or copying the project,
-reproduce the dataset setup as follows:
+The dataset is **included in this repository** under the `data/` folder.
+After cloning the repository, no additional download is needed — simply
+open `notebook.ipynb` and run all cells.
 
-1. Download or clone the original repository:
-   https://github.com/gangeshbaskerr/Phishing-Website-Detection
-2. Copy `DataFiles/5.urldata.csv` from that repository into this project as:
-   `data/5.urldata.csv`
-3. Run `notebook.ipynb` from the root of this repository.
+```bash
+git clone https://github.com/silinm12/cyber-phishing-review
+cd cyber-phishing-review
+jupyter notebook
+```
 
-If `data/5.urldata.csv` is missing, the notebook raises a clear
-`FileNotFoundError` with these copy instructions.
+The dataset originates from the following public repository:
+https://github.com/gangeshbaskerr/Phishing-Website-Detection
 
 Each website record contains:
 
@@ -174,14 +174,28 @@ pip install -r requirements.txt
 
 ## Running the Project
 
-Open `notebook.ipynb` using VS Code or Jupyter Notebook and execute all cells sequentially from top to bottom.
+The dataset is already included in the repository. No separate download is required.
 
-Example:
+1. Clone this repository:
 
 ```bash
-jupyter notebook
+git clone https://github.com/silinm12/cyber-phishing-review
+cd cyber-phishing-review
 ```
-The accompanying project report (`cyber_phishing_report.pdf`) summarizes the methodology, experimental results, and critical evaluation of the reproduction study.
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open and run the notebook:
+
+```bash
+jupyter notebook notebook.ipynb
+```
+
+Execute all cells from top to bottom. The accompanying project report (`cyber_phishing_report.pdf`) summarizes the methodology, experimental results, and critical evaluation of the reproduction study.
 
 ---
 
